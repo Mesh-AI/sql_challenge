@@ -1,0 +1,18 @@
+# Fiftyville SQL Challenge
+#
+# The challenge itself only needs SQLite. Python's built-in `sqlite3` module
+# covers that, so nothing below is strictly required. These packages are
+# optional helpers for people who prefer notebooks or a nicer terminal UI.
+#
+# The `sqlite3` command-line shell is not a Python package. Install it with:
+#   macOS:   brew install sqlite        (usually preinstalled)
+#   Ubuntu:  sudo apt install sqlite3
+#   Windows: winget install SQLite.SQLite
+
+# Run SQL in Jupyter cells with the %%sql magic
+jupyterlab>=4.2
+jupysql>=0.10
+pandas>=2.2
+
+# Terminal SQL IDE with autocomplete and a results grid: `harlequin fiftyville/fiftyville.db`
+harlequin>=1.25
