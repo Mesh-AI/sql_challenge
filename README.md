@@ -60,7 +60,18 @@ cd sql_challenge
 
 ### 2. Pick how you want to query
 
-**Option A: the `sqlite3` CLI (recommended, no installs)**
+**Option A: DBeaver (recommended for best devX)**
+
+1. Download DBeaver here: https://dbeaver.io/download/ 
+2. Open DBeaver
+3. Create new connection for SQLite
+4. In Path, choose the file path for `fiftyville.db`
+5. Finish the connection and download any SQLite drivers needed
+
+![alt text](dbeaver_setup.png)
+![alt text](dbeaver_setup2.png)
+
+**Option B: the `sqlite3` CLI (no installs)**
 
 ```bash
 sqlite3 fiftyville/fiftyville.db
@@ -76,7 +87,7 @@ sqlite> .quit
 
 If `sqlite3` isn't installed: `brew install sqlite` (macOS), `sudo apt install sqlite3` (Ubuntu), or `winget install SQLite.SQLite` (Windows).
 
-**Option B: Python, Jupyter, or a terminal IDE**
+**Option C: Python, Jupyter, or a terminal IDE**
 
 ```bash
 python3 -m venv .venv
@@ -102,7 +113,7 @@ or start `jupyter lab` and, in a notebook:
 SELECT * FROM crime_scene_reports LIMIT 5;
 ```
 
-**Option C: whatever you already use.** DBeaver, DataGrip, VS Code's SQLite extension, and Databricks (upload the `.db`) all work. It's a plain SQLite file.
+**Option D: whatever you already use.** DataGrip, VS Code's SQLite extension, and Databricks (upload the `.db`) all work. It's a plain SQLite file.
 
 ### 3. Solve it
 
