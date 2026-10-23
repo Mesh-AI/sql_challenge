@@ -60,7 +60,8 @@ cd sql_challenge
 
 ### 2. Pick how you want to query
 
-**Option A: DBeaver (recommended for best devX)**
+<details>
+<summary>Option A: DBeaver (recommended for best devX)</summary>
 
 1. Download DBeaver here: https://dbeaver.io/download/ 
 2. Open DBeaver
@@ -71,7 +72,10 @@ cd sql_challenge
 ![alt text](dbeaver_setup.png)
 ![alt text](dbeaver_setup2.png)
 
-**Option B: the `sqlite3` CLI (no installs)**
+</details>
+
+<details>
+<summary>Option B: the `sqlite3` CLI (no installs)</summary>
 
 ```bash
 sqlite3 fiftyville/fiftyville.db
@@ -87,16 +91,16 @@ sqlite> .quit
 
 If `sqlite3` isn't installed: `brew install sqlite` (macOS), `sudo apt install sqlite3` (Ubuntu), or `winget install SQLite.SQLite` (Windows).
 
-**Option C: Python, Jupyter, or a terminal IDE**
+</details>
+
+<details>
+<summary>Option C: Python, Jupyter, or a terminal IDE</summary>
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
-Then either:
-
 ```bash
 harlequin fiftyville/fiftyville.db   # terminal SQL IDE with autocomplete
 ```
@@ -113,7 +117,14 @@ or start `jupyter lab` and, in a notebook:
 SELECT * FROM crime_scene_reports LIMIT 5;
 ```
 
-**Option D: whatever you already use.** DataGrip, VS Code's SQLite extension, and Databricks (upload the `.db`) all work. It's a plain SQLite file.
+</details>
+
+<details>
+<summary>Option D: whatever you already use</summary>
+
+DataGrip, VS Code's SQLite extension, and Databricks (upload the `.db`) all work. It's a plain SQLite file.
+
+</details>
 
 ### 3. Solve it
 
